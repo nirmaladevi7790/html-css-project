@@ -1,0 +1,401 @@
+/* <.....! NAV BAR.....!> */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: grey;
+
+}
+
+.nav ul {
+    display:flex;
+    width: 120px;
+    list-style-type: none;
+}
+
+.nav ul li a {
+    text-decoration: none;
+    padding-left: 110px;
+    justify-content: space-between;
+    text-align: center;
+    color: white;
+}
+
+.nav ul li a:hover {
+    color:blue;
+}
+
+.nav {
+
+    height:50PX;
+    width: 100%;
+    position: fixed;
+    background-color: black;
+
+
+}
+
+/* <!...... BANNER,ANIMATED TEXT,LOGO ANIMATION......!> */
+.ban{
+    position: relative;
+}
+#banner 
+{
+    opacity: 0.3;
+    height: 500px;
+    width: 100%;
+    margin-top: 70px;
+    position:absolute;
+}
+#animated-text
+ {
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: slide 7s ease-out;
+    animation-iteration-count: 20s;
+    position:absolute;
+    top: 200px;
+}
+
+@keyframes slide {
+    0% {
+        transform: translatey(-100%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translatey(0);
+        opacity: 2;
+    }
+}
+#nigo {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    animation-name: log;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    position:absolute;
+    filter: drop-shadow(8px 8px 10px black);
+    top: 350px;
+}
+
+@keyframes log {
+    25% {
+        left:0;
+        
+        transform: rotatey(360deg);
+        transform: scale(1.2);
+    }
+
+    50% {
+        right: 50px;
+        transform: scale(1.2);
+        transform: rotatey(360deg);
+        
+    }
+}
+  
+
+/* <!.......FEATURES......!> */
+
+#pic {
+    padding-left: 120px;
+    padding-top: 700px;
+    display: flex;
+    border-radius: 10px;
+}
+#pic1 {
+    margin-left: 20px;
+    height: 450px;
+    width: 300px;
+    background-color:#303030 ;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px black;
+}
+#pic2 {
+    margin-left: 30px;
+    height: 450px;
+    width: 300px;
+    background-color:#B90605;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px black;
+}
+
+#pic3 {
+    margin-left: 30px;
+    height: 450px;
+    width: 300px;
+    background-color:#BEA501;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px black;
+}
+
+#img1 {
+    height: 300px;
+    width: 500px;
+    padding-left: 50px;
+    padding-top: 20px;
+}
+#img2 {
+    height: 300px;
+    width: 400px;
+    padding-left: 50px;
+    padding-top: 20px;
+}
+#img3 {
+    padding-left: 50px;
+    padding-top: 20px;
+}
+
+/* <!......ABOUT US.......!> */
+
+#aboutus {
+    display: flex;
+}
+#about {
+    padding-left: 180px;
+    padding-top: 20px;
+    width: 100%;
+}
+.aboutus1 {
+    display: flex;
+}
+#about1 {
+    padding-right: 50px;
+    padding-top: 100px;
+    padding-left: 150px;
+    width: 100%;
+}
+#aboutimg1 {
+    height: 300px;
+    width: 500px;
+    margin-left: 50px;
+    box-shadow: 10px 10px 10px 10px;
+}
+
+#aboutimg2 {
+    height: 300px;
+    width: 500px;
+    margin-right: 50px;
+    box-shadow: -20px 10px 20px 10px;
+}
+
+/* <!..........SLOGAN........!> */
+
+#slogan {
+    height: 100px;
+    width: 100%;
+    background-color: #BEA501;
+    text-align: center;
+    color: white;
+    margin-top: 40px;
+    padding-bottom: 20px;
+}
+
+/* <!.......COURSES......!> */
+
+#course1 {
+    display: flex;
+}
+
+#course2 {
+    display: flex;
+}
+
+#course3 {
+    display: flex;
+}
+
+#data:hover img {
+    transform: scale(1.1);
+}
+
+#java:hover img {
+    transform: scale(1.1);
+}
+
+#python:hover img {
+    transform: scale(1.1);
+}
+
+#asp:hover img {
+    transform: scale(1.1);
+}
+
+#mern:hover img {
+    transform: scale(1.1);
+}
+
+#course6:hover img {
+    transform: scale(1.1);
+}
+
+/* <!..........TESTIMONIALS..........!> */
+
+.profile {
+    display: flex;
+    justify-content: space-evenly;
+    height: 480px;
+}
+
+#ani1 {
+    background-color: black;
+    color: white;
+    margin-right: 10px;
+    box-shadow: 5px 5px 5px black;
+    width: 800px;
+    height: 300px;
+    border-radius: 20px;
+    justify-content: center;
+    animation-name:movecards;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+/* #ani2 {
+    background-color: #BEA501;
+    color: white;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px black;
+    margin-right: 10px;
+    height: 300px;
+    width: 800px;
+    justify-content: center;
+    animation-name: ani2;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+#ani3 {
+    background-color: black;
+    color: white;
+    margin-right: 10px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px black;
+    height: 300px;
+    width: 800px;
+    justify-content: center;
+    animation-name: ani3;
+    animation-duration: 5s;
+    animation-iteration-count:infinite;
+} */
+
+ @keyframes movecards {
+    0% {
+        transform:translateX(100%);
+    }
+
+    100%{
+        transform:translateX(0%);
+    }
+}
+  /* @keyframes ani2 {
+    from {
+        margin-left: 100%;
+    }
+
+    to {
+        margin-left: 0%;
+    }
+}
+@keyframes ani3 {
+    from {
+        margin-left: 100%;
+    }
+
+    to {
+        margin-left: 0%;
+    }
+}   */
+
+/* <!........CONTACTUS..........!> */
+
+#Contact_us {
+    display: flex;
+    padding-left: 100px;
+}
+
+#form {
+    margin-left: 50px;
+    margin-top: 80px;
+    color: white;
+    padding: 10px 10px 10px 10px;
+    border: 2px solid black;
+}
+
+#map {
+    margin-left: 50px;
+    margin-top: 80px;
+    color: white;
+    border: 2px solid black;
+
+}
+/* <----------FOOTER---------------> */
+.footer{
+    
+    margin-top: 40px;
+    background-color:#282834;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#accounts ul li:hover{
+    color:blue;
+}
+#it ul li:hover{
+    color:blue;
+}
+#others ul li:hover{
+    color:blue;
+}
+#company ul li:hover{
+    color:blue;
+}
+.fa {
+    height: 10PX;
+    padding: 30px;
+    font-size: 30px;
+    width: 10px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+  }
+  
+  .fa:hover {
+      opacity: 0.7;
+  }
+  
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+  
+  .fa-google {
+    background: #dd4b39;
+    color: white;
+  }
+  
+  .fa-linkedin {
+    background: #007bb5;
+    color: white;
+  }
+
+
+
+
+
+
+
+
+
+
